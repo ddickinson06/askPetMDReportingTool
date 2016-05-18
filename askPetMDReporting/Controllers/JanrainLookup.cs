@@ -27,8 +27,8 @@ namespace askPetMDReporting.Controllers
             var response = client.Execute(request);
             var report = JsonConvert.DeserializeObject<Report>(response.Content);
             var count = report.Count.ToString();
-          
 
+            var p;
             return report;
         }
 
